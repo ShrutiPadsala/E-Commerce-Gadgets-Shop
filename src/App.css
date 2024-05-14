@@ -94,7 +94,7 @@
 /* products */
 
 .card {
-  --accent-color: #ffd426;
+  --accent-color: #268fff;
   position: relative;
   width: 240px;
   background: white;
@@ -107,7 +107,6 @@
 .card .image-container {
   position: relative;
   border-radius: 0.7rem;
-  border-top-right-radius: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -303,7 +302,7 @@
   border-radius: 1.4rem 1.4rem 0.7rem 0.7rem;
   border: none;
   padding: 0.5rem 0;
-  background: var(--accent-color);
+  background: #041833;
   color: white;
   font-weight: 900;
   cursor: pointer;

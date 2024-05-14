@@ -27,7 +27,7 @@ const Product = () => {
                     {
                         products?.map((product, index) => {
                             return (
-                                <div className='col-sm-12 col-md-3 mt-5'>
+                                <div className='col-12 col-md-4 col-lg-3 mt-5'>
                                     <div className="card m-1 w-100">
                                         <div className="image-container">
                                             <img src={product?.image} style={{ width: '200px', height: '290px', justifyContent: 'center', marginLeft: '20PX' }} />
@@ -43,7 +43,7 @@ const Product = () => {
 
                                         <div className="content">
                                             <div className="brand text-uppercase">{product?.category}</div>
-                                            <div className="product-name">{product?.title}</div>
+                                            <div className="product-name truncate">{product?.title}</div>
                                             <div className="classnamer-size-container">
 
                                             </div>

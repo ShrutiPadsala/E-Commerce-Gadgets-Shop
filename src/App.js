@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'
 import SiteNavbar from './Components/Global/Navbar/SiteNavbar';
 import Footer from './Components/Global/Footer/Footer'
-import { Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import { Home } from './Pages/Home/Home';
 import { Shop } from './Pages/Shop/Shop';
 import { SingleProduct } from './Pages/Shop/SingleProduct/SingleProduct';
@@ -26,21 +26,25 @@ export const App = () => {
   return (
     <>
       <SiteNavbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/shop' element={<Shop />} />
-        <Route path='/shop/product/:id' element={<SingleProduct />} />
-        <Route path='/product-cateogry/:id' element={<Category />} />
-        <Route path='/create-account/' element={<Create />} />
-        <Route path='/login/' element={<Login />} />
-        {/* <Route path='/Cart/' element={<Cart />} /> */}
-        <Route path='/Chechout/' element={<Chechout />} />
-        <Route path='/Cart/' element={<Shopping />} />
-        <Route path='/Order/' element={<Order />} />
-        <Route path='/Blog/' element={<Blog />} />
+ 
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/shop/product/:id' element={<SingleProduct />} />
+          <Route path='/product-cateogry/:id' element={<Category />} />
+          <Route path='/create-account/' element={<Create />} />
+          <Route path='/login/' element={<Login />} />
+          {/* <Route path='/Cart/' element={<Cart />} /> */}
+          <Route path='/Chechout/' element={<Chechout />} />
+          <Route path='/Cart/' element={<Shopping />} />
+          <Route path='/Order/' element={<Order />} />
+          <Route path='/Blog/' element={<Blog />} />
 
 
-      </Routes>
+        </Routes>
+ 
+
       <Footer />
     </>
   )

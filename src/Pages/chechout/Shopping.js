@@ -9,8 +9,19 @@ import { Bs2CircleFill } from "react-icons/bs";
 import { Bs3CircleFill } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 function Shopping() {
+  
+
+  const ResponseCart = useSelector(state => state?.cart?.cartItem);
+  console.log(ResponseCart);
+
+
+  useEffect(() => {
+    console.log(ResponseCart);
+  })
+
   const [product, setProducts] = useState([]);
 
   // const FetchProducts = async () => {
